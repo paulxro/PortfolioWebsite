@@ -1,0 +1,29 @@
+import Navbar from './navbar/Navbar'
+import About from './about/About'
+import Landing from './landing/Landing'
+import Projects from './project/Projects'
+import Contact from './Contact/Contact'
+import Skills from './skills/Skills'
+import Scroll from './scroll/Scroll'
+
+
+import './App.css'
+
+
+function App() {
+
+    return (
+        <>
+            
+            <Navbar />
+            <Landing />
+            <About />
+            <Projects />
+            <Contact />
+            <Skills />
+            <Scroll />
+        </>
+    )
+}
+
+export default App
