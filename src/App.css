@@ -54,4 +54,6 @@ section {
     margin: 0;
     padding: 0;
     text-align: center;
+    min-height: 100dvh;
+    padding-bottom: env(safe-area-inset-bottom);
 }
