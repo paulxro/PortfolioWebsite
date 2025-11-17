@@ -37,7 +37,7 @@ export const skills: Skill[] = [
     { name: "Flask"             ,   level: Proficiency.PROFICIENT , icon: "ri-leaf-line"         },
     { name: "Spring Boot"       ,   level: Proficiency.PROFICIENT , icon: "ri-leaf-line"         }, 
     { name: "AWS (EC2)"         ,   level: Proficiency.COMFORTABLE, icon: "ri-cloud-line"        },
-    { name: "AWS (Route5 53)"   ,   level: Proficiency.COMFORTABLE, icon: "ri-cloud-line"        },
+    { name: "AWS (Route 53)"    ,   level: Proficiency.COMFORTABLE, icon: "ri-cloud-line"        },
     { name: "MongoDB"           ,   level: Proficiency.PROFICIENT , icon: "ri-leaf-line"         },
     { name: "Github"            ,   level: Proficiency.PROFICIENT , icon: "ri-leaf-line"         },
     { name: "Gitlab"            ,   level: Proficiency.PROFICIENT , icon: "ri-leaf-line"         },
