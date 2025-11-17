@@ -1,4 +1,5 @@
 import {projects, type Project} from './utils/items'
+import './css/Projects.css'
 
 function ProjectCard({project}: {project: Project}) {
     return (
@@ -16,13 +17,26 @@ function ProjectCard({project}: {project: Project}) {
             </div>
             <div className='projects-project-card-skills-wrapper'>
                 {project.skills.map(skill => (
-                    <p className='project-project-skill'>{skill}</p>
+                    <p className='projects-project-skill'>{skill}</p>
                 ))}
             </div>
             <div className='projects-project-card-desc-wrapper'>
-                <p className='projects-project-card-desc'>
-                    {project.desc}
-                </p>
+                <ul className='projects-project-card-desc-list'>
+                    {project.desc_points.map(desc => (
+                        <li className='projects-project-card-desc-item'>{desc}</li>
+                    ))}
+                </ul>
+            </div>
+            <div className="projects-project-card-see-more-wrapper">
+                {project.link ? (
+                    <a className='projects-project-card-see-more' href={project.link}>
+                        See More
+                    </a>
+                    ) : (
+                    <span className='projects-project-card-see-more disabled'>
+                        No Link Available
+                    </span>
+                )}
             </div>
         </div>
     )

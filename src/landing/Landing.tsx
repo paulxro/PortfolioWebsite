@@ -52,7 +52,7 @@ function Landing() {
                 <div className='landing-img-wrapper'>
                     <div className='landing-img-glow'>
                         <img 
-                            src="/pictures/landing-me.jpg"
+                            src="/personal_pictures/landing-me.jpg"
                             alt="Portrait"
                             className="landing-img"
                         />

@@ -9,7 +9,7 @@ function About() {
                 <div className='about-img-wrapper'>
                     <div className='about-img-glow'>
                         <img 
-                            src="/pictures/about-me.jpg" 
+                            src="/personal_pictures/about-me.jpg" 
                             alt="Paul" 
                             className='about-img'
                         />
@@ -28,15 +28,15 @@ function About() {
 
                     <div className="about-paragraph-card">
                         <p className='about-paragraph'>
-                            I’m Paul-Andrei Aldea (<b>Paul</b> for short), a recent University of Michigan grad with a deep interest 
-                            in how computers work at their lowest levels. <br /><br />
-                            I’m drawn to systems programming, OS internals, concurrency, and performance tuning; really anything 
-                            that requires understanding the machine and pushing it a little harder.
-                            At the same time, I love building real products end-to-end. Whether it’s a full-stack web app or a 
-                            performance-critical library in C/C++, I focus on clarity and efficient design.<br /> <br />
-                            Outside of coding, I’ve spent years playing video games competitively, which taught me a lot about discipline, 
-                            iteration, and high-pressure decision-making. <br /><br />
-                            If you’re interested in collaborating or just want to chat, feel free to reach out.
+                            I’m Paul-Andrei Aldea (<b>Paul</b> for short), a recent University of Michigan grad with a passion for how computers work at their lowest levels.
+<br /><br />
+I’m especially drawn to systems programming, OS internals, concurrency, and performance engineering, really anything that pushes the machine harder. I also enjoy building complete products, from full-stack web apps to performance-critical C/C++ libraries.
+<br /><br />
+I previously worked as a full-stack engineer at NOVA Web Development and served as a Teaching Assistant for EECS 370 (Computer Organization) at the University of Michigan. These roles strengthened both my technical range and my ability to communicate complex ideas clearly.
+<br /><br />
+Outside of work, I’ve competed in video games at a high level, which taught me discipline, iteration, and fast decision-making.
+<br /><br />
+If you're interested in collaborating or just want to chat, feel free to reach out.
                         </p>
                     </div>
 
