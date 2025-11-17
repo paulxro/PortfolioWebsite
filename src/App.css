@@ -35,24 +35,18 @@ html, body {
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     overflow-x: hidden;
     height: -webkit-fill-available;
+    background: transparent;
+    scroll-behavior: smooth;
+    margin: 0;
     /* padding-bottom: 2rem; */
 }
 
 
 section {
-    min-height: 100vh;
-    scroll-snap-align: start;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-html, body {
-    /* scroll-snap-type: y mandatory; */
-    scroll-behavior: smooth;
-    margin: 0;
-    height: 100%;
-    /* overflow-y: hidden; */
 }
 
 
