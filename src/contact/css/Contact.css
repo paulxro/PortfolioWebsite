@@ -25,6 +25,10 @@
     gap: 2rem;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .contact-title {
     font-size: clamp(2rem, 3vw, 3rem);
     font-weight: 700;
