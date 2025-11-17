@@ -1,21 +1,17 @@
 :root {
-    /* Grays / Neutrals */
     --color-gray-900: #0D0D0F;
     --color-gray-800: #1E1E22;
     --color-gray-700: #3A3A42;
 
-    /* Purples (Accent) */
     --color-purple-500: #6C2DC7;
     --color-purple-300: #B980FF;
 
     --color-purple-500-transparent: rgba(108, 45, 199, 0.25);
 
-    /* Optional white */
     --color-white: #FAFAFA;
 }
 
 
-/* Hide Scrollbar for all browsers */
 ::-webkit-scrollbar {
     display: none;
 }
@@ -28,18 +24,20 @@
     -ms-overflow-style: none;
 }
 
+
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100dvh;
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    overflow-x: hidden;
     height: -webkit-fill-available;
-    background: transparent;
+    background: #0a0a0a;
     scroll-behavior: smooth;
     margin: 0;
-    /* padding-bottom: 2rem; */
+    
 }
+
 
 
 section {
@@ -50,10 +48,13 @@ section {
 }
 
 
+
+
 #root {
     margin: 0;
     padding: 0;
     text-align: center;
     min-height: 100dvh;
-    padding-bottom: env(safe-area-inset-bottom);
+    
+    /* padding-bottom: env(safe-area-inset-bottom); */
 }
