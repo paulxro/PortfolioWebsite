@@ -1,6 +1,10 @@
 import './css/About.css'
 
 function About() {
+    const about_paragraph = `
+        Hey, my name is Paul.
+    `
+
     return (
         <section className='about-main' id='about'>
             <div className='about-container'>

@@ -1,41 +1,44 @@
 import { useState, useEffect } from "react";
 
+
+
 export function useActiveSection(sectionIds: Array<string>) {
     const [active, setActive] = useState(sectionIds[0]);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const y_pos: number =
-            document.documentElement.scrollTop || document.body.scrollTop;
+    const handleScroll = () => {
+        const y_pos: number =
+        document.documentElement.scrollTop || document.body.scrollTop;
 
-            const sectionSizes: number[] = [];
-            let heightSoFar = 0;
+        const sectionSizes: number[] = [];
+        let heightSoFar = 0;
 
-            sectionIds.forEach((sectionName) => {
-                const sectionElement = document.getElementById(sectionName);
-                if (!sectionElement) {
-                    sectionSizes.push(heightSoFar);
-                    return;
-                }
-
-                heightSoFar += sectionElement.offsetHeight;
+        sectionIds.forEach((sectionName) => {
+            const sectionElement = document.getElementById(sectionName);
+            if (!sectionElement) {
                 sectionSizes.push(heightSoFar);
-            });
-
-            let active = sectionIds[0];
-
-            for (let i = 0; i < sectionSizes.length; i++) {
-                if (y_pos < sectionSizes[i]) {
-                    active = sectionIds[i];
-                    break;
-                }
+                return;
             }
 
-            setActive(active);
+            heightSoFar += sectionElement.offsetHeight;
+            sectionSizes.push(heightSoFar);
+        });
+
+        let active = sectionIds[0];
+
+        for (let i = 0; i < sectionSizes.length; i++) {
+            if (y_pos < sectionSizes[i]) {
+                active = sectionIds[i];
+                break;
+            }
         }
 
-        const container = document.querySelector("body");
-        container?.addEventListener("scroll", handleScroll);
+        setActive(active);
+    };
+
+    
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
     }, []);
 
 

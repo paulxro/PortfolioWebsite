@@ -17,13 +17,13 @@ function ProjectCard({project}: {project: Project}) {
             </div>
             <div className='projects-project-card-skills-wrapper'>
                 {project.skills.map(skill => (
-                    <p className='projects-project-skill'>{skill}</p>
+                    <p key={skill} className='projects-project-skill'>{skill}</p>
                 ))}
             </div>
             <div className='projects-project-card-desc-wrapper'>
                 <ul className='projects-project-card-desc-list'>
                     {project.desc_points.map(desc => (
-                        <li className='projects-project-card-desc-item'>{desc}</li>
+                        <li key={desc} className='projects-project-card-desc-item'>{desc}</li>
                     ))}
                 </ul>
             </div>
@@ -48,7 +48,7 @@ function Projects() {
             <h1 className='projects-title'> Projects </h1>
             <div className='projects-wrapper'>
                 {projects.map(project => (
-                    <ProjectCard project={project} />
+                    <ProjectCard key={project.name} project={project} />
                 ))}
             </div>
         </section>
