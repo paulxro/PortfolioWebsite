@@ -1,8 +1,8 @@
 import Navbar from './navbar/Navbar'
 import About from './about/About'
 import Landing from './landing/Landing'
-import Projects from './project/Projects'
-import Contact from './Contact/Contact'
+import Projects from './projects/Projects'
+import Contact from './contact/Contact'
 import Skills from './skills/Skills'
 import Scroll from './scroll/Scroll'
 

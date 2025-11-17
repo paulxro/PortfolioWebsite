@@ -1,0 +1,272 @@
+.projects-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(
+        180deg,
+        var(--color-gray-900) 0%,
+        var(--color-gray-800) 100%
+    );
+    color: var(--about-primary-text-color);
+
+    position: relative;
+    padding-top: 3rem;  /* space under navbar */
+    padding-bottom: 3rem;
+}
+
+.projects-wrapper {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    /* Template with auto-fit, up to 4 columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    /* grid-template-columns: repeat(4, minmax(300px, 1fr)); */
+    gap: 2rem;
+
+    /* NEW */
+    min-height: 100%;
+    align-content: center;  /* centers rows vertically */
+    padding-top: 4rem;      /* avoids navbar overlap */
+    padding-bottom: 4rem;
+}
+
+
+@media (max-width: 900px) {
+    .projects-wrapper {
+        width: 90%;
+        grid-template-columns: 1fr;
+        
+        /* ensure centering on mobile */
+        min-height: 100%;
+        align-content: center;
+    }
+}
+
+.projects-project-card-wrapper {
+    position: relative;
+    background: rgba(30, 30, 40, 0.65); /* richer dark glass */
+    border-radius: 30px;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+
+    box-shadow:
+        0 0 20px rgba(108, 45, 199, 0.15), /* purple bloom */
+        0 8px 25px rgba(0, 0, 0, 0.4);     /* depth shadow */
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.projects-project-card-wrapper:hover {
+    transform: translateY(-6px) scale(1.01);
+    border-color: rgba(108, 45, 199, 0.55);
+
+    box-shadow:
+        0 0 25px rgba(108, 45, 199, 0.4),
+        0 12px 35px rgba(0, 0, 0, 0.55);
+    animation: card-shimmer 1.2s ease forwards;
+}
+
+@keyframes card-shimmer {
+    0% {
+        box-shadow: 0 0 25px rgba(108,45,199,0.2);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(108,45,199,0.45);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(108,45,199,0.3);
+    }
+}
+
+.projects-project-card-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at 50% 0%,
+        rgba(108,45,199,0.35),
+        transparent 70%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.projects-project-card-wrapper:hover::before {
+    opacity: 1;
+}
+
+
+
+
+/* Image area */
+.projects-project-card-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.projects-project-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.projects-project-card-img-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* Dark gradient overlay on image */
+.projects-project-card-img-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.35)
+    );
+}
+
+/* Title area */
+.projects-project-card-title-wrapper {
+    padding: 1.2rem 2rem 0.4rem 2rem;
+    color: var(--color-white);
+}
+
+.projects-project-card-title {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Skills */
+.projects-project-card-skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem 1rem 2rem;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.projects-project-skill {
+    margin: 0;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+
+    background: rgba(108, 45, 199, 0.15);
+    border: 1px solid rgba(108, 45, 199, 0.4);
+    color: var(--color-white);
+
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.projects-project-skill:hover {
+    background: rgba(108, 45, 199, 0.35);
+    transform: scale(1.05);
+}
+
+/* Description */
+.projects-project-card-desc-wrapper {
+    padding: 0 2rem 2rem 0rem;
+    text-align: left;
+}
+
+.projects-project-card-desc-item {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.projects-project-card-see-more {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.95),
+        rgba(230, 230, 235, 0.85)
+    );
+
+    color: var(--color-gray-900);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    text-decoration: none;
+
+    box-shadow:
+        0 3px 8px rgba(255, 255, 255, 0.25),
+        0 0 20px rgba(255, 255, 255, 0.12);
+
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+/* Glossy shine overlay */
+.projects-project-card-see-more::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255,255,255,0.35) 50%,
+        transparent 100%
+    );
+
+    transform: skewX(-20deg);
+    transition: left 0.6s ease;
+}
+
+.projects-project-card-see-more:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 5px 20px rgba(255, 255, 255, 0.35),
+        0 0 30px rgba(255, 255, 255, 0.15);
+}
+
+/* Shine animation on hover */
+.projects-project-card-see-more:hover::before {
+    left: 120%;
+}
+
+.projects-project-card-wrapper {
+    position: relative;
+    padding-bottom: 3.5rem; /* create space for button */
+}
+
+.projects-project-card-see-more {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.projects-project-card-see-more.disabled {
+  background: #333;
+  color: #777;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
