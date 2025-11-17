@@ -45,6 +45,7 @@ function ProjectCard({project}: {project: Project}) {
 function Projects() {
     return (
         <section className='projects-main' id='projects'>
+            <h1 className='projects-title'> Projects </h1>
             <div className='projects-wrapper'>
                 {projects.map(project => (
                     <ProjectCard project={project} />

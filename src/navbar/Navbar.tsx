@@ -10,10 +10,13 @@ function Navbar() {
 
     return (
         <>
+            <div className='navbar-wrapper'>
+                <nav className="navbar-main">
+                    {navItems}
+                </nav>
+
+            </div>
             
-            <nav className="navbar-main">
-                {navItems}
-            </nav>
             
         </>
     )
