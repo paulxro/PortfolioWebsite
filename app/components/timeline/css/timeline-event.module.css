@@ -1,0 +1,152 @@
+.event {
+  display: grid;
+  grid-template-columns: 10.5rem 3.5rem minmax(0, 1fr);
+  position: relative;
+}
+
+.dates {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 1.65rem 0 0;
+  color: #61747e;
+  font-family: var(--font-geist-mono);
+  font-size: 0.68rem;
+  line-height: 1.7;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.present {
+  color: #2c6289;
+}
+
+.rail {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+}
+
+.rail::after {
+  position: absolute;
+  top: 2.25rem;
+  bottom: -3rem;
+  left: calc(50% - 0.5px);
+  width: 1px;
+  background: #a6bac7;
+  content: "";
+}
+
+.event:last-child .rail::after {
+  display: none;
+}
+
+.node {
+  position: absolute;
+  top: 1.5rem;
+  left: calc(50% - 6px);
+  width: 12px;
+  height: 12px;
+  border: 2px solid #6286a0;
+  border-radius: 50%;
+  background: var(--background);
+}
+
+.event:first-child .node {
+  background: #2c6289;
+  border-color: #2c6289;
+  box-shadow: 0 0 0 5px #2c628914;
+}
+
+.details {
+  grid-column: 3;
+  grid-row: 1;
+  min-width: 0;
+  align-self: start;
+  padding: 1.5rem 1.75rem 1.75rem;
+  border: 1px solid #dce5e9;
+  border-radius: 14px;
+  background: rgb(255 255 255 / 88%);
+  box-shadow: 0 4px 24px #233c5005;
+}
+
+.company {
+  margin: 0;
+  color: #253b48;
+  font-size: clamp(1.35rem, 3vw, 1.6rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.jobTitle {
+  margin: 0.45rem 0 0;
+  color: #314c60;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.location {
+  margin: 0.3rem 0 0;
+  color: #72828c;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.descriptions {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1.25rem 0 0;
+  padding-left: 1rem;
+  color: #53636b;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  list-style: disc;
+}
+
+.descriptions li {
+  padding-left: 0.25rem;
+}
+
+.descriptions li::marker {
+  color: #2c62898c;
+}
+
+@media (max-width: 700px) {
+  .event {
+    grid-template-columns: 1rem minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    column-gap: 1rem;
+  }
+
+  .dates {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0.15rem 0 0.9rem 0.25rem;
+    text-align: left;
+  }
+
+  .rail {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .node {
+    top: 0.15rem;
+  }
+
+  .rail::after {
+    top: 0.9rem;
+    bottom: -1.4rem;
+  }
+
+  .details {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 1.25rem;
+  }
+
+  .descriptions {
+    font-size: 0.85rem;
+  }
+}

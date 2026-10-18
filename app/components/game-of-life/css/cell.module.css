@@ -1,0 +1,20 @@
+.cell {
+  width: var(--life-cell-size);
+  height: var(--life-cell-size);
+  border: 1.5px solid #2e6790;
+  border-radius: 5px;
+  background: transparent;
+  transition: background-color 900ms ease, border-color 900ms ease, box-shadow 900ms ease;
+}
+
+.alive {
+  border-color: #2c6289;
+  background: #2c6289;
+  box-shadow: 0 0 10px rgba(44, 98, 137, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cell {
+    transition: none;
+  }
+}

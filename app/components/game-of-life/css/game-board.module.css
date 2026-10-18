@@ -1,0 +1,30 @@
+.background {
+  position: fixed;
+  z-index: -1;
+  inset: -3rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  opacity: 0.1;
+  mask-image: linear-gradient(90deg, #000 0%, #0005 30%, #0005 70%, #000 100%);
+  pointer-events: none;
+}
+
+.board {
+  --life-cell-size: 17px;
+
+  display: grid;
+  gap: 6px;
+  width: max-content;
+  transform: rotate(-6deg) scale(1.12);
+  transform-origin: center;
+}
+
+@media (max-width: 700px) {
+  .board {
+    --life-cell-size: 14px;
+
+    gap: 5px;
+    transform: rotate(-6deg) scale(1.3);
+  }
+}

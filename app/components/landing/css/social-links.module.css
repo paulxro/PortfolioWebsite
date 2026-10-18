@@ -1,0 +1,31 @@
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  font-family: var(--font-geist-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 1.75rem;
+  border-bottom: 1px solid #b7c9d4;
+  color: #41677f;
+  text-decoration: none;
+}
+
+.links a:hover {
+  border-color: currentColor;
+  color: #2c6289;
+}
+
+.links a:focus-visible {
+  outline: 2px solid #2c6289;
+  outline-offset: 4px;
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "umich-masters",
+    "institution": "University of Michigan Ann Arbor",
+    "degree": "Master of Science in Computer Science",
+    "endDate": "May 2025",
+    "location": "Ann Arbor, MI",
+    "details": [
+      { "label": "GPA", "value": "3.8 / 4.0" },
+      {
+        "label": "Coursework",
+        "value": "Advanced Operating Systems, Advanced Scalable Systems for Gen AI"
+      }
+    ]
+  },
+  {
+    "id": "umich-bachelors",
+    "institution": "University of Michigan Ann Arbor",
+    "degree": "Bachelor of Science in Computer Science",
+    "endDate": "May 2024",
+    "location": "Ann Arbor, MI",
+    "details": [
+      { "label": "GPA", "value": "3.9 / 4.0" },
+      {
+        "label": "Honors",
+        "value": "William J. Branstrom Prize, University Honors with Distinction"
+      },
+      {
+        "label": "Coursework",
+        "value": "Operating Systems, Web Systems, Computer Security, Computer Organization"
+      }
+    ]
+  }
+]

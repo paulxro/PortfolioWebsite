@@ -1,0 +1,54 @@
+[
+  {
+    "id": "david-ai",
+    "startDate": "2026-08",
+    "endDate": null,
+    "jobTitle": "Product Engineer",
+    "companyName": "David AI",
+    "location": "San Francisco, CA",
+    "descriptions": [
+      "Led engineering for audio data-quality flags that validate training data before delivery, supporting high-value enterprise engagements across a 26-customer portfolio of leading AI companies.",
+      "Designed and launched a Temporal-orchestrated script-generation platform producing ~30K audio-collection scripts daily for a 1M+ freelance-worker network; used parallel execution to improve generation speed and reliability.",
+      "Authored the technical design and built the execution harness for David AI's first operator-configurable script-generation product, reducing engineering involvement required to ship and iterate on custom collection pipelines.",
+      "Expanded platform observability across cost, duration, and failure modes; partnered weekly with Operations and used PostHog feedback to refine operator-facing workflows.",
+      "& more"
+    ]
+  },
+  {
+    "id": "toma",
+    "startDate": "2026-03",
+    "endDate": "2026-08",
+    "jobTitle": "Founding Engineer (Full Stack, FDE)",
+    "companyName": "Toma",
+    "location": "San Francisco, CA",
+    "descriptions": [
+      "Architected and owned an end-to-end agentic AI pipeline deployed on AWS (EC2, S3, Aurora PostgreSQL), using Prisma, Redis, and Docker; sustained <5s time to first response and 99.92% uptime across ~800 daily enterprise leads.",
+      "Independently built a follow-up system driving 60% of a 92% relative increase in lead-to-booking conversion, sustaining a 25% booking rate through 2x growth in daily lead volume and driving ~$240K in customer daily revenue.",
+      "Designed and built outbound-campaign features to re-engage dead leads, taking response rate from 0% to 35%; instrumented the platform with PostHog to guide iteration on the agentic experience."
+    ]
+  },
+  {
+    "id": "clerkie",
+    "startDate": "2026-01",
+    "endDate": "2026-02",
+    "jobTitle": "Software Engineering Intern (Full Stack)",
+    "companyName": "Clerkie",
+    "location": "San Francisco, CA",
+    "descriptions": [
+      "Developed and maintained full-stack features using Next.js, TypeScript, and Tailwind, with MongoDB as the primary data layer, deployed on Vercel and AWS.",
+      "Built and maintained CI/CD pipelines with GitHub Actions and implemented end-to-end testing with Playwright, ensuring deployment stability and catching regressions pre-release.",
+      "Modernized backend services by refactoring JavaScript codebases to TypeScript, improving type safety, maintainability, and code reliability."
+    ]
+  },
+  {
+    "id": "university-of-michigan",
+    "startDate": "2023-08",
+    "endDate": "2025-04",
+    "jobTitle": "Teaching Assistant, Computer Organization and Architecture",
+    "companyName": "University of Michigan",
+    "location": "Ann Arbor, MI",
+    "descriptions": [
+      "Led weekly sections of 30+ students, designed lesson plans, and administratively supported course staff."
+    ]
+  }
+]

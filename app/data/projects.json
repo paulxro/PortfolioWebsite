@@ -1,0 +1,112 @@
+[
+  {
+    "id": "kv-align",
+    "title": "KV-Align for Streaming LLMs",
+    "category": "Research",
+    "description": "A predictive model that corrects positionally encoded tokens in KV caches for streaming inference, delivering up to a 50% speed-up over cache recomputation.",
+    "technologies": ["C++", "LLMs", "KV Cache", "Performance"],
+    "image": "/project_pictures/kv_align_proj.png",
+    "imageAlt": "Predictive neural network aligning a misaligned KV cache",
+    "imageFit": "contain",
+    "link": { "href": "/project_pictures/kv_align_file.pdf", "label": "Read paper" }
+  },
+  {
+    "id": "dynamic-swap",
+    "title": "DynamicSwap",
+    "category": "Research",
+    "description": "An extension to Application-Integrated Far Memory that monitors resource behavior and uses multi-threaded optimizations to reduce tail latency by up to 20,000× on real workloads.",
+    "technologies": ["C++", "Operating Systems", "Memory"],
+    "image": "/project_pictures/memory_proj.png",
+    "imageAlt": "DynamicSwap memory system diagram",
+    "imageFit": "contain",
+    "link": { "href": "/project_pictures/memory_proj_file.pdf", "label": "Read paper" }
+  },
+  {
+    "id": "llvm-loop-inversion",
+    "title": "Inter-Dependent Loop Inversion for LLVM",
+    "category": "Research",
+    "description": "Reordering inter-dependent nested loops to achieve up to a 20.7× speed-up over LLVM’s auto-vectorizer and a 41.2% reduction in dynamic instructions.",
+    "technologies": ["C++", "LLVM", "Compilers", "Performance"],
+    "image": "/project_pictures/vectorizer_proj.png",
+    "imageAlt": "LLVM compiler dragon logo",
+    "imageFit": "contain",
+    "link": { "href": "/project_pictures/vectorization_file.pdf", "label": "Read paper" }
+  },
+  {
+    "id": "elo-chess-evaluation",
+    "title": "Elo-Integrated Evaluation for Chess Engines",
+    "category": "Research",
+    "description": "A chess evaluation metric that accounts for player Elo, improving game-outcome prediction accuracy for lower-rated players by up to 20% over Stockfish baselines.",
+    "technologies": ["Python", "Chess", "Evaluation"],
+    "image": "/project_pictures/chess_elo_proj.png",
+    "imageAlt": "Chess engine evaluation illustration",
+    "imageFit": "contain",
+    "link": { "href": "/project_pictures/chess_elo_file.pdf", "label": "Read paper" }
+  },
+  {
+    "id": "c-webserver",
+    "title": "C Webserver Library",
+    "category": "Systems",
+    "description": "A C library for HTTP/1.x requests, DNS resolution from root name servers, and multi-threaded request handling to improve throughput and response times.",
+    "technologies": ["C", "Networking", "DNS", "Concurrency"],
+    "image": "/project_pictures/web_server_proj.png",
+    "imageAlt": "Web server networking diagram",
+    "imageFit": "contain",
+    "link": null
+  },
+  {
+    "id": "distributed-computing",
+    "title": "Distributed Computing Interface",
+    "category": "Systems",
+    "description": "A fault-tolerant worker–manager system for distributed job execution, deployed on AWS EC2 with Route 53 to run large-scale tasks in parallel.",
+    "technologies": ["Python", "Distributed Systems", "AWS"],
+    "image": "/project_pictures/distributed_proj.svg",
+    "imageAlt": "Manager server distributing work to four worker servers",
+    "imageFit": "contain",
+    "link": null
+  },
+  {
+    "id": "lcc",
+    "title": "Little Computer Compiler",
+    "category": "Compilers",
+    "description": "A C++ compiler for an educational assembly language, using abstract syntax trees, symbol tables, and dead code elimination. Tested from parsing through binary generation.",
+    "technologies": ["C++", "Assembly", "Compilers"],
+    "image": "/project_pictures/lcc_proj.png",
+    "imageAlt": "EECS 370 computer organization illustration",
+    "imageFit": "contain",
+    "link": { "href": "https://github.com/paulxro/lcc", "label": "View source" }
+  },
+  {
+    "id": "chess-visual-helper",
+    "title": "Chess Visual Helper",
+    "category": "Accessibility",
+    "description": "A Chrome extension that helps visually impaired players on chess.com by capturing audio input and mapping moves to a digital board, with automated Cypress tests.",
+    "technologies": ["TypeScript", "Chromium", "Cypress"],
+    "image": "/project_pictures/chess_app.png",
+    "imageAlt": "Green pawn surrounded by chess pieces",
+    "imageFit": "contain",
+    "link": { "href": "https://www.youtube.com/watch?v=JF8bIIdvLKo", "label": "Watch demo" }
+  },
+  {
+    "id": "banking-app",
+    "title": "Banking Web Application",
+    "category": "Application",
+    "description": "A React front end and Python REST API for core banking workflows, with JWT authentication and a distributed MongoDB data layer.",
+    "technologies": ["React", "Python", "Flask", "MongoDB"],
+    "image": "/project_pictures/bank_app.jpg",
+    "imageAlt": "City skyline at sunset",
+    "imageFit": "cover",
+    "link": { "href": "https://github.com/paulxro/fake_bank_app", "label": "View source" }
+  },
+  {
+    "id": "stock-trading-app",
+    "title": "Stock Trading Application",
+    "category": "Application",
+    "description": "An Electron desktop app for stock data and statistical risk analysis, backed by a Flask REST API and protected with TOTP multi-factor authentication.",
+    "technologies": ["Electron", "Python", "Flask", "MongoDB"],
+    "image": "/project_pictures/stock_app.jpg",
+    "imageAlt": "Stock market trading display",
+    "imageFit": "cover",
+    "link": { "href": "https://github.com/paulxro/stock_trader_app", "label": "View source" }
+  }
+]
