@@ -7,8 +7,8 @@
     "companyName": "David AI",
     "location": "San Francisco, CA",
     "descriptions": [
-      "Led engineering for audio data-quality flags that validate training data before delivery, supporting high-value enterprise engagements across a 26-customer portfolio of leading AI companies.",
-      "Designed and launched a Temporal-orchestrated script-generation platform producing ~30K audio-collection scripts daily for a 1M+ freelance-worker network; used parallel execution to improve generation speed and reliability.",
+      "Led engineering for audio data delivery, supporting high-value enterprise engagements across a customer portfolio of leading AI companies.",
+      "Designed and launched a Temporal-orchestrated script-generation platform producing ~30K audio-collection scripts daily for a xM+ freelance-worker network; used parallel execution to improve generation speed and reliability.",
       "Authored the technical design and built the execution harness for David AI's first operator-configurable script-generation product, reducing engineering involvement required to ship and iterate on custom collection pipelines.",
       "Expanded platform observability across cost, duration, and failure modes; partnered weekly with Operations and used PostHog feedback to refine operator-facing workflows.",
       "& more"
