@@ -8,7 +8,7 @@
   grid-column: 1;
   grid-row: 1;
   margin: 1.65rem 0 0;
-  color: #61747e;
+  color: var(--text-muted);
   font-family: var(--font-geist-mono);
   font-size: 0.68rem;
   line-height: 1.7;
@@ -17,7 +17,7 @@
 }
 
 .present {
-  color: #2c6289;
+  color: var(--accent);
 }
 
 .rail {
@@ -32,7 +32,7 @@
   bottom: -3rem;
   left: calc(50% - 0.5px);
   width: 1px;
-  background: #a6bac7;
+  background: var(--line);
   content: "";
 }
 
@@ -46,15 +46,15 @@
   left: calc(50% - 6px);
   width: 12px;
   height: 12px;
-  border: 2px solid #6286a0;
+  border: 2px solid var(--border-strong);
   border-radius: 50%;
   background: var(--background);
 }
 
 .event:first-child .node {
-  background: #2c6289;
-  border-color: #2c6289;
-  box-shadow: 0 0 0 5px #2c628914;
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 5px var(--accent-halo);
 }
 
 .details {
@@ -63,15 +63,15 @@
   min-width: 0;
   align-self: start;
   padding: 1.5rem 1.75rem 1.75rem;
-  border: 1px solid #dce5e9;
+  border: 1px solid var(--border);
   border-radius: 14px;
-  background: rgb(255 255 255 / 88%);
-  box-shadow: 0 4px 24px #233c5005;
+  background: var(--surface-card-muted);
+  box-shadow: var(--card-shadow);
 }
 
 .company {
   margin: 0;
-  color: #253b48;
+  color: var(--text-strong);
   font-size: clamp(1.35rem, 3vw, 1.6rem);
   font-weight: 600;
   letter-spacing: -0.035em;
@@ -80,7 +80,7 @@
 
 .jobTitle {
   margin: 0.45rem 0 0;
-  color: #314c60;
+  color: var(--foreground);
   font-size: 0.95rem;
   font-weight: 500;
   line-height: 1.5;
@@ -88,7 +88,7 @@
 
 .location {
   margin: 0.3rem 0 0;
-  color: #72828c;
+  color: var(--text-faint);
   font-size: 0.75rem;
   line-height: 1.5;
 }
@@ -98,7 +98,7 @@
   gap: 0.7rem;
   margin: 1.25rem 0 0;
   padding-left: 1rem;
-  color: #53636b;
+  color: var(--text);
   font-size: 0.875rem;
   line-height: 1.75;
   list-style: disc;
@@ -109,7 +109,7 @@
 }
 
 .descriptions li::marker {
-  color: #2c62898c;
+  color: var(--accent);
 }
 
 @media (max-width: 700px) {

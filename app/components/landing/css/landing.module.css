@@ -30,10 +30,10 @@
   height: 256px;
   margin-top: 2rem;
   overflow: hidden;
-  border: 5px solid #ffffff;
+  border: 5px solid var(--surface);
   border-radius: 22px;
-  background: #e4ebef;
-  box-shadow: 0 0 0 1px #dce5e9, 0 12px 40px #233c5014;
+  background: var(--surface-frame);
+  box-shadow: 0 0 0 1px var(--border), 0 12px 40px var(--accent-halo);
 }
 
 .portrait {

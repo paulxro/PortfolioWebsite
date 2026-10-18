@@ -3,25 +3,25 @@
   min-width: 0;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid #dce5e9;
+  border: 1px solid var(--border);
   border-radius: 14px;
-  background: rgb(255 255 255 / 92%);
-  box-shadow: 0 4px 24px #233c5005;
+  background: var(--surface-card);
+  box-shadow: var(--card-shadow);
   transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .card:hover,
 .card:focus-within {
-  border-color: #9eb5c5;
-  box-shadow: 0 8px 28px #233c500d;
+  border-color: var(--border-hover);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .imageFrame {
   position: relative;
   aspect-ratio: 5 / 2;
   overflow: hidden;
-  border-bottom: 1px solid #e6ecef;
-  background: #f8fafb;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-image);
 }
 
 .coverImage {
@@ -43,7 +43,7 @@
 
 .category {
   margin: 0 0 0.75rem;
-  color: #617b8d;
+  color: var(--text-muted);
   font-family: var(--font-geist-mono);
   font-size: 0.6rem;
   letter-spacing: 0.12em;
@@ -52,7 +52,7 @@
 
 .title {
   margin: 0;
-  color: #253b48;
+  color: var(--text-strong);
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: -0.035em;
@@ -61,7 +61,7 @@
 
 .description {
   margin: 0.9rem 0 1.25rem;
-  color: #53636b;
+  color: var(--text);
   font-size: 0.875rem;
   line-height: 1.75;
 }
@@ -76,11 +76,11 @@
 }
 
 .technologies li {
-  border: 1px solid #dfe8ee;
+  border: 1px solid var(--border);
   border-radius: 5px;
   padding: 0.3rem 0.5rem;
-  background: #edf3f7;
-  color: #4d6a7d;
+  background: var(--surface-subtle);
+  color: var(--text-muted);
   font-family: var(--font-geist-mono);
   font-size: 0.6rem;
   line-height: 1.4;
@@ -93,7 +93,7 @@
   min-height: 2.75rem;
   margin-top: auto;
   border-radius: 3px;
-  color: #2c6289;
+  color: var(--accent);
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -105,7 +105,7 @@
 }
 
 .link:focus-visible {
-  outline: 2px solid #2c6289;
+  outline: 2px solid var(--accent);
   outline-offset: 5px;
 }
 

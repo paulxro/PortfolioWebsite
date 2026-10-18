@@ -17,16 +17,16 @@
   gap: 0.5ch;
   width: 26ch;
   flex-shrink: 0;
-  border: 1px solid #a6bdcd;
+  border: 1px solid var(--border-strong);
   border-radius: 6px;
   padding: 0.6rem 0.75rem;
-  background: #edf3f8;
-  color: #2c6289;
-  box-shadow: inset 0 1px 2px #2c628908;
+  background: var(--surface-subtle);
+  color: var(--accent);
+  box-shadow: inset 0 1px 2px var(--accent-halo);
 }
 
 .prompt {
-  color: #8ba6ba;
+  color: var(--accent-muted);
 }
 
 .verb {
@@ -45,11 +45,11 @@
 }
 
 .at {
-  color: #82959f;
+  color: var(--text-faint);
 }
 
 .company {
-  color: #314c60;
+  color: var(--foreground);
   font-weight: 600;
 }
 

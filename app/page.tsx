@@ -4,6 +4,7 @@ import { Timeline } from "./components/timeline/timeline";
 import { Education } from "./components/education/education";
 import { Projects } from "./components/projects/projects";
 import { SectionHeading } from "./components/section-heading/section-heading";
+import { ThemeToggle } from "./components/theme-toggle/theme-toggle";
 import workExperience from "./data/work-experience.json";
 import education from "./data/education.json";
 import projects from "./data/projects.json";
@@ -11,6 +12,7 @@ import projects from "./data/projects.json";
 export default function Page() {
   return (
     <main className="site-shell">
+      <ThemeToggle />
       <GameBoard />
 
       <div className="page-content">

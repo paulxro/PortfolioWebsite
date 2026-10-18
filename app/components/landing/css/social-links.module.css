@@ -15,17 +15,17 @@
   align-items: center;
   gap: 0.35rem;
   min-height: 1.75rem;
-  border-bottom: 1px solid #b7c9d4;
-  color: #41677f;
+  border-bottom: 1px solid var(--border-strong);
+  color: var(--text-muted);
   text-decoration: none;
 }
 
 .links a:hover {
   border-color: currentColor;
-  color: #2c6289;
+  color: var(--accent);
 }
 
 .links a:focus-visible {
-  outline: 2px solid #2c6289;
+  outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
